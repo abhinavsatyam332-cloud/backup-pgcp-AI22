@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SL1Assignment">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/production/lab-session/SL1Assignment.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
