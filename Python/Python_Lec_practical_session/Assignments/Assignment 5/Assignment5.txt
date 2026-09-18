@@ -1,0 +1,9 @@
+Topic: Matplotlib
+
+1.	Draw line chart to show urban and rural population of India over the years using population.csv [rural 	population is the difference between total population and urban population]
+2. 	Using a Bar chart display India's total, urban and rural population from year 2020 to 2025
+2.	Using gapminder2007.csv show life expectancy of top 10 highly populated countries from Asia
+3.	Using a pie chart show distribution of top six selling cars [Create data as required]
+4.	Using Histogram show distribution of developers by their experience [use survey_data_sample.csv]
+
+Note: use appropriate labels, title and legend for each chart

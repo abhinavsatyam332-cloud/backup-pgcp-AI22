@@ -31,6 +31,7 @@ k.	Change all column names to title case
 l.	Change column names: pop to Population, gdpPercap to GDP_Percap
 
 m.	Increase Life Expectancy by 2 years for all African countries
+
 n.	Find all the rows that contain NA values
 o.	Fill NA values with 0 for numeric columns
 
