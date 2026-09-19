@@ -1,0 +1,7 @@
+Topic : Seaborn
+
+1.	Draw a histogram showing distribution of flipper_length across species for penguin dataset
+	Create a stack plot and step plot- – Write down your interpretations
+2.	Draw a bivariant KDE plot to show relationship between horsepower and displacement [use mpg dataset] – Write down your 	interpretations 
+3.	Draw a correlation heatmap for diamonds dataset, add annotation, change colour pallet and write your interpretation 
+4.	Draw a scatter plot to visualizing relationships between flower measurements. [e.g. sepal_length, petal_width] across 	the species. Write your interpretations 

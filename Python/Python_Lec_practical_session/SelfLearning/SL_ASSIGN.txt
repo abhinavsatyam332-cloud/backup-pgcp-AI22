@@ -1,0 +1,31 @@
+Dataset : regional_sales_data.txt
+
+Instructions:
+
+ Load the provided dataset into a Pandas DataFrame named df.
+ Write clean, commented Python code for each question.
+ Ensure all plots have appropriate titles, labels, and legends where necessary.
+
+
+
+
+1. Check and replace all missing values in the Units_Sold column with the
+median value of that specific column
+
+2. Calculate the total units sold and the average unit price for each Store_name.
+Identify which store has generated the highest total units sold
+
+3. Create a new column named Total_Revenue, calculated by multiplying
+Units_Sold by Unit_Price
+
+4. Group the data by Region_ID and calculate the sum of Total_Revenue for
+each region
+
+5. Use Matplotlib to plot a bar chart showing Region_ID on the x-axis and the
+sum of Total_Revenue on the y-axis. Set the bar colour to green, add a grid
+on the y-axis, and give the chart a clear title
+
+6. Create a scatter plot using Matplotlib mapping Unit_Price on the x-axis
+against Units_Sold on the y-axi
+
+Write plot interpretation in your own words
