@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    {% if title %}
+        <title>My book Store - {{title}}</title>
+    {% else %}
+        <title>My book Store </title>
+    {% endif %}
+
+</head>
+<body>
+    <h1>The largest book store</h1>
+<br>
+
+{% for book in books  %}
+
+    <h2>{{ book.title }} </h2>
+    <h4>Author : {{ book.author }} </h4>
+    <h4>Price : {{ book.price }} </h4>
+    <br>
+
+{% endfor %}
+
+
+</body>
+</html>
