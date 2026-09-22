@@ -1,53 +1,19 @@
 from flask import render_template
 
 from . import app
+from .models import Book
 
-
-books = [
-    {
-        'title': 'The Echo of Silent Winds',
-        'author': 'Elena Rostova',
-        'price': 45
-    },
-    {
-        'title': 'Shadows in the Algorithm',
-        'author': 'Marcus Vance',
-        'price': 62
-    },
-    {
-        'title': 'Beneath a Paper Moon',
-        'author': 'Aria Sterling',
-        'price': 38
-    },
-    {
-        'title': 'Chronicles of the Iron Sky',
-        'author': 'Devon Thorne',
-        'price': 55
-    },
-    {
-        'title': 'Whispers of the Forgotten Sea',
-        'author': 'Lyra Belacqua',
-        'price': 29
-    },
-    {
-        'title': 'The Quantum Garden',
-        'author': 'Julian Hayes',
-        'price': 49
-    },
-    {
-        'title': 'Midnight at St. Jude’s',
-        'author': 'Clara O\'Connor',
-        'price': 34
-    },
-    {
-        'title': 'Architects of Tomorrow',
-        'author': 'Siddharth Rao',
-        'price': 70
-    }
-]
+books=[]
 
 @app.route("/")
+def index():
+    books = Book.query.all()
+    return render_template('index.html',books=books)
+
+
+@app.route("/home")
 def home():
+    books = Book.query.all()
     return render_template('Home.html',books=books)
 
 @app.route("/books")
@@ -55,6 +21,14 @@ def showData():
     return render_template('Books.html',books=books,title='Hello')
 
 @app.route("/about")
-def showData1():
+def about():
     return render_template('About.html')
 
+@app.route("/register")
+def register():
+    return render_template('About.html')
+
+@app.route('/book/<int:book_id>')
+def book_details(book_id):
+    book = Book.query.get_or_404(book_id)
+    return render_template('book_details.html',book = book)

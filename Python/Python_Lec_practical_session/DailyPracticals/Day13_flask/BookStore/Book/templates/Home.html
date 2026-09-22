@@ -1,29 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+{% extends 'base.html' %}
 
-    {% if title %}
-        <title>My book Store - {{title}}</title>
-    {% else %}
-        <title>My book Store </title>
-    {% endif %}
-
-</head>
+{% block body %}
 <body>
-<h1>Home</h1>
+<h1>The largest book store</h1>
 <br>
-<br>
+{% for book in books %}
 
-{% for book in books  %}
 
-    <h2>{{ book.title }} </h2>
-    <h4>Author : {{ book.author }} </h4>
-    <h4>Price : {{ book.price }} </h4>
-    <br>
+<div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt={{ book.title }}>
+    <div class="card-body">
+        <h5 class="card-title">{{ book.title }}</h5>
+        <p class="card-text">Author : {{ book.author }} </p>
+        <p class="card-text">Price : {{ book.price }} </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
 
 {% endfor %}
+{% endblock %}
 
 
-</body>
-</html>
+

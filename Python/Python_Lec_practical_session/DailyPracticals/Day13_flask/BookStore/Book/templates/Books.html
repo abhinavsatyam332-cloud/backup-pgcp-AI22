@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
 
-    {% if title %}
-        <title>My book Store - {{title}}</title>
-    {% else %}
-        <title>My book Store </title>
-    {% endif %}
-
-</head>
+{% extends 'base.html' %}
+{% block body %}
 <body>
     <h1>The largest book store</h1>
 <br>
@@ -22,7 +13,5 @@
     <br>
 
 {% endfor %}
+{% endblock %}
 
-
-</body>
-</html>

@@ -1,0 +1,19 @@
+set FLASK_APP=book
+flask shell
+from book.models import Book
+db.create_all()
+
+book1 = Book(title='The Echo of Silent Winds', author='Elena Rostova', price=45)
+book2 = Book(title='Shadows in the Algorithm', author='Marcus Vance', price=62)
+book3 = Book(title='Beneath a Paper Moon', author='Aria Sterling', price=38)
+book4 = Book(title='Chronicles of the Iron Sky', author='Devon Thorne', price=55)
+book5 = Book(title='Whispers of the Forgotten Sea', author='Lyra Belacqua', price=29)
+
+
+db.session.add(book1)
+db.session.add_all([book2,book3,book4,book5])
+
+db.session.commit()
+
+
+Book.query.all()
