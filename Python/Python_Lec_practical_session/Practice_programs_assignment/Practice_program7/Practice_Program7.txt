@@ -1,0 +1,10 @@
+Topic : Plotly
+
+1.	Draw a bar chart showing GDP percentage for European countires. [use gdpminder dataset]
+	Use different semantics as orientation, bar mode, bar norm, text to improve your chart
+	For the same dataset show GDP over the years using animation frame as Country 
+2.	Draw a Histogram showing votes secured by 3 candidates - Coderre, Joly, Bergeron
+	Use semantics -bar mode, color, facet_row to improve your chart. Create a cumulative graph as well. [use election dataset]
+3.	Draw a scatter plot to show relationship between iris petal length and sepal width
+
+
