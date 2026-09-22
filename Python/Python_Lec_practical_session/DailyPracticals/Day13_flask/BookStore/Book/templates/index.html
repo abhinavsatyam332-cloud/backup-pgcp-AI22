@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
     {% block body %}
         {% for book in books %}
+
             <article class="media content-section">
                 <div class="media-body">
                     <div class="article-metadata">
@@ -14,5 +15,7 @@
                     </div>
                 </div>
             </article>
+
         {% endfor %}
     {% endblock %}
+
