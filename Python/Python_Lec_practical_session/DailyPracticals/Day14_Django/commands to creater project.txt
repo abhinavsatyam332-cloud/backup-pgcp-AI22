@@ -1,0 +1,4 @@
+
+python -m django startproject BookStore
+cd ./BookStore
+python manage.py startapp book
