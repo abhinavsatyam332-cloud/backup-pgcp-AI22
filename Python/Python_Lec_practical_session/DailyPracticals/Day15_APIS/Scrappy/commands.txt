@@ -1,0 +1,31 @@
+use     https://quotes.toscrape.com/
+	    https://books.toscrape.com/
+
+data scrapping
+
+
+
+scrapy startproject bookscrapper
+
+scrapy genspider book_spider https://books.toscrape.com/
+
+
+scrapy shell
+
+fetch('https://books.toscrape.com/')
+
+books = response.css('article.product_pod')
+len(books)
+
+books[0].css('h3 a::text').get()
+
+books[0].css('p.price_color::text').get()
+
+books[0].css('h3 a::attr("href")').get()
+
+books[0].xpath('normalize-space(.//p[@class="instock availability"])').get()
+
+scrapy runspider book_spider.py
+
+scrapy runspider book_spider.py -O file_name.csv
+
